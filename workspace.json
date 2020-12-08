@@ -51,7 +51,8 @@
         "serve": {
           "builder": "@nrwl/web:dev-server",
           "options": {
-            "buildTarget": "my-react-app:build"
+            "buildTarget": "my-react-app:build",
+            "port": 4200
           },
           "configurations": {
             "production": {
@@ -157,7 +158,8 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "my-ng-app:build"
+            "browserTarget": "my-ng-app:build",
+            "port": 4201
           },
           "configurations": {
             "production": {
