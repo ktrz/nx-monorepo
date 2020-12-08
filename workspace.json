@@ -240,6 +240,32 @@
           }
         }
       }
+    },
+    "my-ng-feature": {
+      "projectType": "library",
+      "root": "libs/my-ng-feature",
+      "sourceRoot": "libs/my-ng-feature/src",
+      "prefix": "nx-monorepo",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/my-ng-feature/tsconfig.lib.json",
+              "libs/my-ng-feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/my-ng-feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/my-ng-feature/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

@@ -59,6 +59,8 @@
         "enforceBuildableLibDependency": true,
         "allow": [],
         "depConstraints": [
+          { "sourceTag": "type:feature", "onlyDependOnLibsWithTags":  ["type:feature", "type:util"]},
+          { "sourceTag": "type:util", "onlyDependOnLibsWithTags":  ["type:util"]},
           {
             "sourceTag": "*",
             "onlyDependOnLibsWithTags": ["*"]

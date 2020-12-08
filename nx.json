@@ -31,14 +31,17 @@
       "implicitDependencies": ["my-react-app"]
     },
     "my-ng-app": {
-      "tags": []
+      "tags": ["type:app"]
     },
     "my-ng-app-e2e": {
-      "tags": [],
+      "tags": ["type:app"],
       "implicitDependencies": ["my-ng-app"]
     },
     "my-lib": {
-      "tags": []
+      "tags": ["type:util"]
+    },
+    "my-ng-feature": {
+      "tags": ["type:feature"]
     }
   }
 }

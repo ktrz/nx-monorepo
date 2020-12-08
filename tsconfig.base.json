@@ -16,7 +16,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@nx-monorepo/my-lib": ["libs/my-lib/src/index.ts"]
+      "@nx-monorepo/my-lib": ["libs/my-lib/src/index.ts"],
+      "@nx-monorepo/my-ng-feature": ["libs/my-ng-feature/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

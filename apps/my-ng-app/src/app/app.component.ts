@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { myLib } from '@nx-monorepo/my-lib';
 
 @Component({
   selector: 'nx-monorepo-root',
@@ -8,5 +7,4 @@ import { myLib } from '@nx-monorepo/my-lib';
 })
 export class AppComponent {
   title = 'my-ng-app';
-  mySubtitle = myLib();
 }
